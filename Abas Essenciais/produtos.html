@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Produtos - DMB Shirts</title>
+
+
+<!-- Parte CSS, design -->
+
+
+<style>
+
+		/*Cabeçalho*/
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			background-color: #333;
+			color: #fff;
+		}
+
+		/*Logo*/
+		.logo img {
+			width: 150px;
+			height: auto;
+		}
+
+		/*Colunas*/
+		.container {
+		text-align: center;
+		display: flex;
+		width: 100%;
+		overflow: hidden;
+		background-color: #333;
+		border-radius: 20px;
+		justify-content: center;
+}
+
+		/*Produtos*/
+		.produtos {
+			text-align: center;
+			display: flex;
+			flex-wrap: nowrap;
+			width: max-content;
+			transition: transform 0.3s ease-in-out;
+			
+		}
+
+		.produto {
+			width: 200px;
+			margin: 20px;
+			display: inline-block;
+			text-align: center;
+			
+			
+			}
+
+			.produto img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			}
+
+			.produto h3 {
+			margin-top: 10px;
+			font-size: 1.2rem;
+			}
+
+			.produto p {
+			margin-top: 5px;
+			font-size: 1rem;
+			}
+
+			.produto .preco {
+			margin-top: 10px;
+			font-size: 1.2rem;
+			
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			color: rgba(172,170,170,255);
+			}
+
+			.produto .comprar {
+			margin-top: 10px;
+			padding: 5px 10px;
+			font-size: 1rem;
+			font: bold;
+			background-color: rgba(170,170,171,255);
+			color: #333;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			}
+
+
+		.btn-prev,
+		.btn-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 50px;
+			height: 50px;
+			font-size: 30px;
+			color: white;
+			background-color: rgba(0, 0, 0, 0.3);
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.btn-prev {
+			left: 0;
+			
+		}
+
+		.btn-next {
+			right: 0;
+		}
+
+		.bnt-hm {
+			margin-top: 5px;
+			padding: 5px 20px;
+			font-size: 1rem;
+			font: bold;
+			background-color: rgba(170,170,171,255);
+			color: #333;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="C:\Projetos\Site DMB\Arquivos\logo.png" alt="Logo da Minha Loja de Roupas">
+		</div>
+		<nav>
+			<ul>
+				<a href="C:\Projetos\Site DMB\Abas Essenciais\home.html"><button class = "bnt-hm">Home</button></a>
+				<a href="C:\Projetos\Site DMB\Abas Essenciais\produtos.html"><button class = "bnt-hm">Produtos</button></a>
+				<a href="C:\Projetos\Site DMB\Abas Essenciais\contato.html"><button class = "bnt-hm">Contato</button></a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Produtos da loja <style>h2{text-align: center; color: #333; font-size: 30px; font-family: candara ;}</style></h2>
+		<div class = "container">
+			<div class="produtos">
+
+				<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 1">
+				<h3>Nome do produto 1 <style>h3{color :rgba(172,170,170,255); font-family: Arial, Helvetica, sans-serif; }</style></h3>
+
+				<p class="preco">R$ 99,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+				
+				<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+				<h3>Nome do produto 2</h3>
+
+				<p class="preco">R$ 149,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+
+				<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+				<h3>Nome do produto 3</h3>
+
+				<p class="preco">R$ 149,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+				
+				<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+				<h3>Nome do produto 4</h3>
+
+				<p class="preco">R$ 149,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+
+				<ul>
+				<div class="produto">
+					<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+					<h3>Nome do produto 3</h3>
+					
+					<p class="preco">R$ 149,99</p>
+					<button class="comprar">Comprar</button>
+					</div>
+				</ul>
+			
+				
+			</div>
+		
+		</div>
+		<h1>oi <style>h1{color: #fff;font-size: 15px;}</style></h1>
+		<div class = "container">
+			<div class="produtos"></div>
+			<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 1">
+				<h3>Nome do produto 1 <style>h3{color :rgba(172,170,170,255); }</style></h3>
+
+				<p class="preco">R$ 99,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+				
+				<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+				<h3>Nome do produto 2</h3>
+
+				<p class="preco">R$ 149,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+
+				<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+				<h3>Nome do produto 3</h3>
+
+				<p class="preco">R$ 149,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+				
+				<ul>
+				<div class="produto">
+				<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+				<h3>Nome do produto 4</h3>
+
+				<p class="preco">R$ 149,99</p>
+				<button class="comprar">Comprar</button>
+				</div>
+				</ul>
+
+				<ul>
+				<div class="produto">
+					<img src="https://placehold.it/200x200" width="200x200" alt="Descrição do produto 2">
+					<h3>Nome do produto 3</h3>
+					
+					<p class="preco">R$ 149,99</p>
+					<button class="comprar">Comprar</button>
+					</div>
+				</ul>
+			
+				
+			</div>
+		
+		</div>
+		<ul>
+			
+		</ul>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 DMB Shirts. Todos os direitos reservados.</p>
+	</footer>
+</body>
+</html>
